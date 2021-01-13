@@ -53,8 +53,15 @@ handleSubmit = (event)=>{
                         required 
                     />
 
-                    <CustomButton type='submit'> sign in </CustomButton>
-                    <CustomButton onClick={SignInWithGoogle}> Sign in with google </CustomButton>
+                    <div className='button'>
+                        <CustomButton type='submit'> sign in </CustomButton>
+                        <CustomButton 
+                            onClick={SignInWithGoogle} 
+                            isGoogleSignIn
+                        > Sign in with google 
+                        </CustomButton>
+                    </div>
+                    
                 </form>
             </div>
         )
